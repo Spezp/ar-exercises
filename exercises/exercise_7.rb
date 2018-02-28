@@ -8,5 +8,13 @@ require_relative './exercise_6'
 
 puts "Exercise 7"
 puts "----------"
+puts "New Store name:"
+puts ">"
+new_store1_input = STDIN.gets.chomp
+new_store1 = Store.create({name: new_store1_input })
+
+puts new_store1.errors.messages
+
+
 
 # Your code goes here ...
